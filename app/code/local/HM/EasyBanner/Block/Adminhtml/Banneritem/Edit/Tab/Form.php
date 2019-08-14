@@ -14,6 +14,20 @@ class HM_EasyBanner_Block_Adminhtml_Banneritem_Edit_Tab_Form extends Mage_Adminh
 		 $banners[$banner->getId()] = $banner->getTitle();
 	  }
 
+	  $fieldset->addField('contact_us', 'label', array(
+	  		'name'      => 'contact_us',
+	  		'disabled'  => true,
+	  		'after_element_html' => '<div style="width: 700px; float:left;margin-left: -205px;"><span>Want more attractive sliders? Check out
+<strong>
+<a target="_blank" href="http://www.mage-world.com/easy-banner-magento-banner-extension.html">Easy Banner</a>
+</strong>
+ with 7 supported sliders and
+<strong>
+<a target="_blank" href="http://www.mage-world.com/easy-banner-pro-slider-magento-banner-extension.html">Easy Banner Pro</a>
+</strong>
+with 13 supported sliders.</span></div><br/>',
+	  ));
+	  
 	  $fieldset->addField('banner_id', 'select', array(
           'label'     => Mage::helper('easybanner')->__('Banner'),
           'name'      => 'banner_id',
@@ -106,6 +120,7 @@ class HM_EasyBanner_Block_Adminhtml_Banneritem_Edit_Tab_Form extends Mage_Adminh
           'wysiwyg'   => false,
           'required'  => false,
       ));
+          
      
       if ( Mage::getSingleton('adminhtml/session')->getEasyBannerItemData() )
       {

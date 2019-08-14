@@ -8,6 +8,20 @@ class HM_EasyBanner_Block_Adminhtml_Banner_Edit_Tab_Form extends Mage_Adminhtml_
       $this->setForm($form);
       $fieldset = $form->addFieldset('easybanner_form', array('legend'=>Mage::helper('easybanner')->__('Banner information')));
      
+      $fieldset->addField('contact_us', 'label', array(
+      		'name'      => 'contact_us',
+      		'disabled'  => true,
+      		'after_element_html' => '<div style="width: 700px; float:left;margin-left: -205px;"><span>Want more attractive sliders? Check out
+<strong>
+<a target="_blank" href="http://www.mage-world.com/easy-banner-magento-banner-extension.html">Easy Banner</a>
+</strong>
+ with 7 supported sliders and
+<strong>
+<a target="_blank" href="http://www.mage-world.com/easy-banner-pro-slider-magento-banner-extension.html">Easy Banner Pro</a>
+</strong>
+with 13 supported sliders.</span></div>',
+      ));
+      
       $fieldset->addField('identifier', 'text', array(
           'label'     => Mage::helper('easybanner')->__('Identifier'),
           'class'     => 'required-entry',
@@ -117,7 +131,7 @@ class HM_EasyBanner_Block_Adminhtml_Banner_Edit_Tab_Form extends Mage_Adminhtml_
           'wysiwyg'   => false,
           'required'  => false,
       ));
-     
+      
       if ( Mage::getSingleton('adminhtml/session')->getEasyBannerData() )
       {
           $form->setValues(Mage::getSingleton('adminhtml/session')->getEasyBannerData());
