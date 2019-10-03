@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/EasyBannerFree",
+    "name": "OpenMageModuleFostering\/EasyBannerFree",
     "type": "magento-module",
     "license": "Free-License",
     "homepage": "",
     "description": "Get 2 sliders FREE from MageWorld!! Highlight your featured products and sales with our professional and attractive sliders! Resize your banners easily! Also show static images anywhere on your website.",
     "authors": [
-    {
-        "name": "mageworld",
-        "email": "haint@mage-world.com"
-    }
-],
+        {
+            "name": "mageworld",
+            "email": "haint@mage-world.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
