@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Get 2 sliders FREE from MageWorld!! Highlight your featured products and sales with our professional and attractive sliders! Resize your banners easily! Also show static images anywhere on your website.
